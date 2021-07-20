@@ -1,6 +1,13 @@
 # orion-frontend
 Team Orion フロントエンドアプリケーション（Angular）
 
+
+# Installation
+- Angular CLIのインストール
+```
+npm install -g @angular/cli
+```
+
 # System Requirement
 ```
 % ng version
@@ -31,6 +38,7 @@ Package                      Version
 % npm --version
 6.14.11
 ```
+
 
 # Usage
 ## Angular サーバ起動方法（ローカル稼働確認）
