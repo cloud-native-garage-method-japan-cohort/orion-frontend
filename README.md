@@ -71,4 +71,14 @@ localhost:8000/discovery/search
 ## Curl コマンド（Request 確認）
 ```
 curl -X POST -H "Content-Type: application/json" -d '{"searchText":"コロナ"}' localhost:8000/discovery/search
-```
+```  
+
+# Reference
+- [Angular] Angular CLI で作成したプロジェクト構成をみる  
+https://qiita.com/ksh-fthr/items/6b454264bb1f95434d42
+- [Angular] Angular アプリの構成をみる  
+https://qiita.com/ksh-fthr/items/d040cf8b2d15bd7e507d
+- [Angular] Angular CLI によるコンポーネントの生成  
+https://qiita.com/ksh-fthr/items/9f73fa161a1d7798def2
+- [Angular] Angular CLI によるサービスの生成  
+https://qiita.com/ksh-fthr/items/900baee52b80e6ed1b66
