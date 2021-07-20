@@ -7,6 +7,10 @@ Team Orion フロントエンドアプリケーション（Angular）
 ```
 npm install -g @angular/cli
 ```
+- npm アップデート
+```
+npm install
+```
 
 # System Requirement
 ```
