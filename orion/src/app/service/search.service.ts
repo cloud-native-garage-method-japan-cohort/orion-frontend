@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs/internal/Observable';
 
 @Injectable({
@@ -35,12 +35,15 @@ export class SearchService {
    *
    * @memberof SearchService
    */
-   callRestAPI(searchText: String): Observable<Result> {
-      // API Call
-      return this.httpClient.post<Result>(this.backendCallUrl, '{"searchText":"コロナ"}');
+  callRestAPI(searchText: string): Observable<Result> {
+    // パラメータをラップ
+    const body = new HttpParams()
+      .set('searchText', searchText);
+
+    // API Call
+    return this.httpClient.post<Result>(this.backendCallUrl, body);
   }
 
-}
 
 export interface Result {
   responseText: string;
