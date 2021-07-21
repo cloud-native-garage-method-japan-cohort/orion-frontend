@@ -1,23 +1,22 @@
-
-
-
-
-
-
-
-
-
-
-
-
-<form class="example-form">
-  <mat-form-field class="example-full-width" appearance="fill">
-    <label>検索キーワード</label>
-    <input id="searchText" name="searchText" matInput placeholder="例）開催日" #searchText />
-    <button mat-stroked-button color="primary" (click)='onClick(searchText.value)'>検索</button>
-  </mat-form-field>
-</form>
-
-
-<p>検索結果</p>
-<p>{{responseText}}</p>
+<div class="header">
+  <span>OnionSearch</span>
+</div>
+<div class="form-style">
+  <form class="example-form">
+    <mat-form-field class="example-full-width" appearance="fill">
+      <div class="label"><label>検索キーワード</label></div>
+      <div class="search-container">
+        <div class="box">
+          <input id="searchText" name="searchText" matInput placeholder="例）開催日" #searchText />
+        </div>
+        <div class="box">
+          <button mat-stroked-button color="primary" (click)='onClick(searchText.value)'>検索</button>
+        </div>
+      </div>
+    </mat-form-field>
+  </form>
+</div>
+<div class="form-style">
+  <div class="label"><p>検索結果</p></div>
+  <p>{{responseText}}</p>  
+</div>

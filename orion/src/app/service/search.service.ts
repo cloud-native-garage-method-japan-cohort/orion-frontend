@@ -37,7 +37,7 @@ export class SearchService {
    */
    callRestAPI(searchText: String): Observable<Result> {
       // API Call
-      return this.httpClient.post<Result>(this.backendCallUrl, searchText);
+      return this.httpClient.post<Result>(this.backendCallUrl, '{"searchText":"コロナ"}');
   }
 
 }

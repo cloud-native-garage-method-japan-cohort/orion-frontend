@@ -1,0 +1,28 @@
+.header {
+    height: 45px;
+    background-color: blue;
+    color: white;
+    width: 1920px;
+    line-height: 45px;
+}
+
+.header > span {
+    padding-left: 30px;
+    font-size: 25px;
+}
+.form-style {
+    margin-left: 60px;
+}
+
+.label {
+    height: 30px;
+}
+
+.search-container {
+    overflow: hidden;
+}
+
+.box {
+    float: left;
+    display: inline-block;
+}
