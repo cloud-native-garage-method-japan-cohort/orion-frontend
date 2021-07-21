@@ -1,0 +1,10 @@
+<form class="example-form">
+  <mat-form-field class="example-full-width" appearance="fill">
+    <label>検索キーワード</label>
+    <input id="searchText" name="searchText" matInput placeholder="例）開催日" #searchText />
+    <button mat-stroked-button color="primary" (click)='onClick(searchText.value)'>検索</button>
+  </mat-form-field>
+</form>
+
+<p>検索結果</p>
+<p>{{responseText}}</p>
