@@ -43,7 +43,7 @@ export class SearchService {
     // API Call
     return this.httpClient.post<Result>(this.backendCallUrl, body);
   }
-
+}
 
 export interface Result {
   responseText: string;
